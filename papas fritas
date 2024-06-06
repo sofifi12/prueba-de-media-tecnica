@@ -1,0 +1,16 @@
+#se inicializan las variables contadoras
+aprobados = 0
+reprobados = 0
+
+#se solicita al usuario que se ingresen 10 notas
+for i in range(10):
+    nota = float(input(f'ingrese la nota del alumnno{i + 1}:'))
+    #se evalua si la nota es mayor o igual a 7
+    if nota >= 7:
+        aprobados += 1
+    else: 
+        reprobados += 1
+
+#se muestran los resultados 
+print(f'cantidad de alumnos aprobados:{aprobados}') 
+print(f'cantidad de almunos reprobados:{reprobados}')       
